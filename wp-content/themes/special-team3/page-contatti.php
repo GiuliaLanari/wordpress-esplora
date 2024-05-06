@@ -3,7 +3,7 @@ get_header();
 include "nav.php";
 
 the_post(); ?>
-<div class="my-2 text-center">
+<div class="my-2  text-center">
 <h1><?php the_title(); ?></h1>
 </div>
 
