@@ -10,20 +10,19 @@
 }
 
 body {
-  background-color: black;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 132, 255, 0.623);
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD ======= body {
+  font-family: "Poppins", sans-serif;
 }
 
-
-html {
+>>>>>>>b0f58df60c030f2f8d4d3528a876767d80c6d30b html {
   margin-top: 0px;
 }
 
-
-video {
+<<<<<<< HEAD =======>>>>>>>b0f58df60c030f2f8d4d3528a876767d80c6d30b video {
   object-fit: cover;
   z-index: -1;
 }
@@ -73,13 +72,13 @@ video {
   cursor: pointer;
 }
 
-
-/*provaaaaaaaaaaa*/
+/*CLASSI DELLA NAVBAR RIGHT*/
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
+  z-index: 2;
 }
 .header {
   padding-block: 20px;
@@ -98,9 +97,20 @@ video {
   display: inline-block;
 }
 .header__menu .menu-item a {
-  padding: 5px 10px;
+  background: transparent;
+  border: none;
   text-decoration: none;
-  color: white;
+  padding: 1em;
+  color: black;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header__menu .menu-item a:hover {
+  color: #eb6010;
+  transition: 0.2s;
+  box-shadow: 0 8px 10px -5px rgba(238, 79, 0, 0.7);
 }
 
 /*///////////////////////////////////////*/
