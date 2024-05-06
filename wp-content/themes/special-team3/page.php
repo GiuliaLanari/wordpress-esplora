@@ -11,10 +11,5 @@ the_content();
 
 
 
-
-
-
-
-
 include "footerStyle.php";
 get_footer();
