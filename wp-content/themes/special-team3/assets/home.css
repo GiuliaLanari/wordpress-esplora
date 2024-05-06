@@ -14,11 +14,15 @@ body {
   background-color: rgba(0, 132, 255, 0.623);
 }
 
-html {
+<<<<<<< HEAD ======= body {
+  font-family: "Poppins", sans-serif;
+}
+
+>>>>>>>b0f58df60c030f2f8d4d3528a876767d80c6d30b html {
   margin-top: 0px;
 }
 
-video {
+<<<<<<< HEAD =======>>>>>>>b0f58df60c030f2f8d4d3528a876767d80c6d30b video {
   object-fit: cover;
   z-index: -1;
 }

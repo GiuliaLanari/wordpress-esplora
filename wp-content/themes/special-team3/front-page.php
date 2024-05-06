@@ -138,7 +138,11 @@
 
     // Output del bottone
     if (!empty($city_name)) {
+<<<<<<< HEAD
       echo '<a href="http://localhost/wordpress-esplora/home/"   class="btn btn-primary mb-3 tranlate-middle-x fs-1" id="button"> Visit ' . $city_name . '</a>';
+=======
+      echo '<a href="https://www.example.com/' . sanitize_title($city_name) . '" class="btn btn-primary mb-3 tranlate-middle-x fs-1" id="button"> Visit ' . $city_name . '</a>';
+>>>>>>> b0f58df60c030f2f8d4d3528a876767d80c6d30b
     }
     ?>
   </div>
