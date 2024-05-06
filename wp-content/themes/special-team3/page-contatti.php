@@ -1,5 +1,6 @@
 <?php
 get_header();
+include "nav.php";
 
 the_post(); ?>
 <div class="my-2 text-center">
