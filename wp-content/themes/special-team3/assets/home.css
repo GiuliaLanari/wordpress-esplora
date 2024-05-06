@@ -13,6 +13,67 @@ body {
   background-color: black;
 }
 
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+  margin-top: 0px;
+}
+
+
+video {
+  object-fit: cover;
+  z-index: -1;
+}
+
+#site-logo {
+  position: absolute;
+  top: 20px; /* Puoi regolare la posizione verticale del logo */
+  left: 20px; /* Puoi regolare la posizione orizzontale del logo */
+  z-index: 9999; /* Imposta un indice di z-index alto per posizionare il logo sopra il video */
+}
+
+.container-fluid {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#countdown-timer {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 100vw;
+  padding: 5px;
+  margin-top: 210px;
+  margin-bottom: 20px; /* Aggiungi margine inferiore per separare il countdown dal pulsante */
+  background-color: rgba(1, 25, 59, 0.7);
+}
+
+#button {
+  margin-top: 250px; /* Aggiungi margine superiore per separare il pulsante dal countdown */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ff5900;
+  padding: 5px 20px;
+  box-shadow: 3px 3px 5px #002338;
+}
+
+#button:hover {
+  background-color: #eb4a00;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
 /*provaaaaaaaaaaa*/
 
 .container {
@@ -115,47 +176,6 @@ body {
 
 .fa-solid:hover {
   color: #eb6010;
-}
-
-/*cambio stile al bottone della chat in basso a sx*/
-.chat-btn-big button {
-  position: absolute;
-  bottom: 30px;
-  left: 15px;
-  border: none;
-  border-radius: 30px;
-  width: 150px;
-  height: 40px;
-  font-size: 0.8em;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #ff5900;
-  padding: 5px;
-  box-shadow: 3px 3px 5px #002338;
-}
-
-.chat-btn-big button:hover {
-  background-color: #eb4a00;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.chat-btn-big button a {
-  color: white;
-  text-decoration: none;
-}
-
-.chat-btn-big button a i {
-  color: white;
-  padding: 0px 4px 0px 0px;
-}
-
-.chat-btn-big button a i:hover {
-  color: white;
-}
-
-.chat-btn-big {
-  position: absolute;
 }
 
 .condensed {
