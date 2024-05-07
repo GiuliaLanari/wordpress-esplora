@@ -16,7 +16,7 @@ get_header();
 
 
 
-<div class="style-food">
+<div class="">
 <?php
     the_content();
 ?>

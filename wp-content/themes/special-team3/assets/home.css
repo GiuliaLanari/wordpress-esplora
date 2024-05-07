@@ -33,6 +33,14 @@ body {
   color: #eeba00;
 }
 
+.style-error h1,
+.style-error h2,
+.style-error h3,
+.style-error h4,
+.style-error a {
+  color: #db5000;
+}
+
 html {
   margin-top: 0px;
 }
@@ -175,6 +183,9 @@ div.wp-block-cover-is-layout-flow > p {
 
 .style-culture div.wp-block-cover-is-layout-flow > p {
   background-color: #a349a48c;
+}
+.style-error div.wp-block-cover-is-layout-flow > p {
+  background-color: #db5000;
 }
 /*///////////////////////////////////////*/
 
