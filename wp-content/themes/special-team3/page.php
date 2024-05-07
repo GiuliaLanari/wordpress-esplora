@@ -12,12 +12,8 @@ get_header();
     <?php
     include "nav.php";
     ?>
-    <!-- <div class="custom-background">
 
-
-// add_theme_support( 'custom-background' );
-</div> -->
-
+</div> 
 
     <div class="container-fluid position-absolute  overflow-hidden p-0 ">
         <!-- Logo -->
@@ -39,7 +35,6 @@ get_header();
             echo 'Nessuna immagine in evidenza disponibile.';
         }
         ?>
-
 
     </div>
 
