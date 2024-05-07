@@ -45,7 +45,7 @@ get_header();
     the_content();
     ?>
 
-<div class="banner">
+<div class="banner my-5">
     <?php
         $args = array(
             'post_type' => 'page', // Recupera solo le pagine
