@@ -41,6 +41,11 @@ body {
 .style-food h4,
 .style-food a {
   color: #eeba00;
+  background-color: rgba(0, 132, 255, 0.623);
+}
+
+html {
+  margin-top: 0px;
 }
 
 video {
@@ -95,10 +100,10 @@ video {
 
 /*CLASSI DELLA NAVBAR RIGHT*/
 
-.container {
-  max-width: 1200px;
+.navcontainer {
+  width: 100vw;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 40px 0 20px;
   z-index: 2;
 }
 .header {
@@ -121,8 +126,9 @@ video {
   background: transparent;
   border: none;
   text-decoration: none;
-  padding: 1em;
-  color: black;
+  padding: 3px;
+  margin: 0px 10px;
+  color: rgb(255, 255, 255);
   font-size: 1em;
   text-transform: uppercase;
   font-weight: bold;
@@ -131,7 +137,18 @@ video {
 .header__menu .menu-item a:hover {
   color: #eb6010;
   transition: 0.2s;
-  box-shadow: 0 8px 10px -5px rgba(238, 79, 0, 0.7);
+  box-shadow: 0 10px 10px -7px rgba(238, 79, 0, 0.7);
+}
+
+/* _______________________________________________________________________________________________
+___________________ S F O N D O    S C R I T T A _________________________________________________ */
+
+.wp-block-cover {
+  padding: 0;
+}
+
+div.wp-block-cover-is-layout-flow > p {
+  background-color: rgba(1, 25, 59, 0.7);
 }
 
 /*///////////////////////////////////////*/
