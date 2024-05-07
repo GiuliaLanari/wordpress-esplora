@@ -7,12 +7,9 @@ get_header();
 <div class="position-relative">
 
 <?php
-include "nav.php";
+get_template_part("nav");
+// include "nav.php";
 ?>
-<!-- <div class="custom-background">
-
-// add_theme_support( 'custom-background' );
-</div> -->
 
 <div class="container-fluid position-absolute overflow-hidden p-0 ">
     <!-- Logo -->
@@ -29,9 +26,15 @@ include "nav.php";
     </div>
 </div>
 
+<div class="container mt-5 content ">
+  <div class="row">
+  <?php
+  the_content();
+  ?>
+
+  </div>
+</div>
 
 <?php
-the_content();
-
-include "footerStyle.php";
+get_template_part("footerStyle");
 get_footer();

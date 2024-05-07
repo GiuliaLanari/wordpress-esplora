@@ -2,6 +2,17 @@
   background: linear-gradient(180deg, rgb(0 0 0 / 33%) 0%, rgba(255, 248, 248, 0) 97%);
 } */
 
+/* COLORI PAGE
+ #2a4a8b blu scuro
+ #0091b5 azzurro
+ #f8d90f giallo
+ #eeba00 arancione
+ #db5000 rosso
+ #3E2C9A viola scuro
+ #A988F9 viola chiaro
+ #a349a4
+ */
+
 .btn-front-page {
   top: 50%;
   left: 0;
@@ -11,7 +22,25 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgba(0, 132, 255, 0.623);
+  /* background-color: #02ff396c; */
+}
+
+.title-food {
+  background: #eeba00bd;
+  color: white;
+  margin-block: 2rem;
+  padding-block: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.style-food h1,
+.style-food h2,
+.style-food h3,
+.style-food h4,
+.style-food a {
+  color: #eeba00;
 }
 
 video {
@@ -106,6 +135,7 @@ video {
 }
 
 /*///////////////////////////////////////*/
+
 /*IMPORT*/
 /*
 FONT STYLE
