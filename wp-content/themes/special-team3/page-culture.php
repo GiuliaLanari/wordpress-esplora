@@ -16,7 +16,7 @@ get_header();
 
 
 
-<div class="style-food">
+<div class="style-culture">
 <?php
     the_content();
 ?>

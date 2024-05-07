@@ -6,7 +6,7 @@
  #2a4a8b blu scuro
  #0091b5 azzurro
  #f8d90f giallo
- #eeba00 arancione
+ #eeba00 ocra
  #db5000 rosso
  #3E2C9A viola scuro
  #A988F9 viola chiaro
@@ -25,22 +25,38 @@ body {
   /* background-color: #02ff396c; */
 }
 
-.title-food {
-  background: #eeba00bd;
-  color: white;
-  margin-block: 2rem;
-  padding-block: 0.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
 .style-food h1,
 .style-food h2,
 .style-food h3,
 .style-food h4,
 .style-food a {
   color: #eeba00;
+}
+
+.style-attractions h1,
+.style-attractions h2,
+.style-attractions h3,
+.style-attractions h4,
+.style-attractions a {
+  color: #0091b5;
+}
+
+.style-culture h1,
+.style-culture h2,
+.style-culture h3,
+.style-culture h4,
+.style-culture a {
+  color: #a349a4;
+}
+
+.wp-block-columns {
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+
+html {
+  margin-top: 0px;
 }
 
 video {
@@ -95,10 +111,10 @@ video {
 
 /*CLASSI DELLA NAVBAR RIGHT*/
 
-.container {
-  max-width: 1200px;
+.navcontainer {
+  width: 100vw;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 40px 0 20px;
   z-index: 2;
 }
 .header {
@@ -121,8 +137,9 @@ video {
   background: transparent;
   border: none;
   text-decoration: none;
-  padding: 1em;
-  color: black;
+  padding: 3px;
+  margin: 0px 10px;
+  color: rgb(255, 255, 255);
   font-size: 1em;
   text-transform: uppercase;
   font-weight: bold;
@@ -131,9 +148,30 @@ video {
 .header__menu .menu-item a:hover {
   color: #eb6010;
   transition: 0.2s;
-  box-shadow: 0 8px 10px -5px rgba(238, 79, 0, 0.7);
+  box-shadow: 0 10px 10px -7px rgba(238, 79, 0, 0.7);
 }
 
+/* _______________________________________________________________________________________________
+___________________ S F O N D O    S C R I T T A _________________________________________________ */
+
+.wp-block-cover {
+  padding: 0;
+}
+
+div.wp-block-cover-is-layout-flow > p {
+  background-color: rgba(1, 25, 59, 0.7);
+}
+.style-food div.wp-block-cover-is-layout-flow > p {
+  background-color: #eeba00b3;
+}
+
+.style-attractions div.wp-block-cover-is-layout-flow > p {
+  background-color: #0091b5a6;
+}
+
+.style-culture div.wp-block-cover-is-layout-flow > p {
+  background-color: #a349a48c;
+}
 /*///////////////////////////////////////*/
 
 /*IMPORT*/
