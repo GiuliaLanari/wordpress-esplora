@@ -13,4 +13,7 @@ the_post(); ?>
 
 
 
-<?php get_footer();
+
+<?php 
+include "footerStyle.php";
+get_footer();

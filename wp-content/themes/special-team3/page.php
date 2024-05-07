@@ -14,7 +14,7 @@ include "nav.php";
 // add_theme_support( 'custom-background' );
 </div> -->
 
-<div class="container-fluid position-absolute  overflow-hidden p-0 ">
+<div class="container-fluid position-absolute overflow-hidden p-0 ">
     <!-- Logo -->
     <?php
     // Recupera l'URL del logo dal campo personalizzato 'logo' utilizzando ACF
