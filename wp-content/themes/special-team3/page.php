@@ -43,22 +43,39 @@ get_header();
 
     <?php
     the_content();
-    
-// ID delle pagine statiche desiderate
-$page_ids = array(109, 101, 98);
+    ?>
 
-// Ciclo attraverso gli ID delle pagine
-foreach ($page_ids as $page_id) {
-    // Ottieni l'estratto della pagina specifica
-    $excerpt = get_post_field('post_excerpt', $page_id);
+<div class="banner">
+    <?php
+        $args = array(
+            'post_type' => 'page', // Recupera solo le pagine
+            'posts_per_page' => 3, // Numero massimo di pagine da recuperare
+            'orderby' => 'date', // Ordina per data di pubblicazione
+            'order' => 'DESC' // Ordine decrescente
+        );
 
-    // Output dell'estratto con un link alla pagina completa
-    echo '<div class="page-excerpt">';
-    echo '<h2><a href="' . get_permalink($page_id) . '">' . get_the_title($page_id) . '</a></h2>';
-    echo '<p>' . $excerpt . '</p>';
-    echo '</div>';
-}
+        $query = new WP_Query($args);
 
+        if ($query->have_posts()) :
+            while ($query->have_posts()) : $query->the_post();
+    ?>
+    <div class="banner-item">
+        <a href="<?php the_permalink(); ?>">
+            <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('medium'); ?>
+            <?php endif; ?>
+            <h2><?php the_title(); ?></h2>
+            <span class="button">Scopri di più</span>
+        </a>
+    </div>
+    <?php
+            endwhile;
+        endif;
+        wp_reset_postdata(); // Reimposta i dati del post
+    ?>
+</div>
+
+<?php
 
     include "footerStyle.php";
     get_footer();

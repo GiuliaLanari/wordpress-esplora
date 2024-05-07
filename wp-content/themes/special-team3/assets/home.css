@@ -700,3 +700,29 @@ body {
     padding: 8px;
   }
 }
+
+/*esp. home page*/
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.banner img {
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+.banner h2 {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.banner .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
