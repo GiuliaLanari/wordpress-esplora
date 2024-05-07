@@ -13,7 +13,7 @@ get_header();
     include "nav.php";
     ?>
 
-</div> 
+
 
     <div class="container-fluid position-absolute  overflow-hidden p-0 ">
         <!-- Logo -->
@@ -40,8 +40,24 @@ get_header();
 
 
 
+
     <?php
     the_content();
+    
+// ID delle pagine statiche desiderate
+$page_ids = array(109, 101, 98);
+
+// Ciclo attraverso gli ID delle pagine
+foreach ($page_ids as $page_id) {
+    // Ottieni l'estratto della pagina specifica
+    $excerpt = get_post_field('post_excerpt', $page_id);
+
+    // Output dell'estratto con un link alla pagina completa
+    echo '<div class="page-excerpt">';
+    echo '<h2><a href="' . get_permalink($page_id) . '">' . get_the_title($page_id) . '</a></h2>';
+    echo '<p>' . $excerpt . '</p>';
+    echo '</div>';
+}
 
 
     include "footerStyle.php";
