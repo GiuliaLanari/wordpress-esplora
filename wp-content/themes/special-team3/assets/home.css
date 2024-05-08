@@ -130,6 +130,34 @@ video {
   max-width: 30%;
 }
 
+.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 p input {
+  background: #eb5a49;
+  color: white;
+  border: none;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 10px;
+}
+
+.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 p input {
+  width: 430px;
+}
+
+textarea {
+  width: 430px;
+  height: 5rem;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: #002338;
+  border-radius: 10px;
+  margin: 0;
+  background-color: #002338;
+  color: #ff5900;
+  width: 430px;
+  text-align: center;
+}
+
 /*CLASSI DELLA NAVBAR RIGHT*/
 
 .navcontainer {
