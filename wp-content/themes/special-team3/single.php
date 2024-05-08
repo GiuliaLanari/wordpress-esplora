@@ -16,7 +16,7 @@ get_header();
 
 
 
-<div class="">
+<div class="style-error">
 <?php
     the_content();
 ?>

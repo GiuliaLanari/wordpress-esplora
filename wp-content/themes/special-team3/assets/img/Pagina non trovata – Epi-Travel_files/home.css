@@ -1,0 +1,775 @@
+/* .video-container {
+  background: linear-gradient(180deg, rgb(0 0 0 / 33%) 0%, rgba(255, 248, 248, 0) 97%);
+} */
+
+/* COLORI PAGE
+ #2a4a8b blu scuro
+ #0091b5 azzurro
+ #f8d90f giallo
+ #eeba00 ocra
+ #db5000 rosso
+ #3E2C9A viola scuro
+ #A988F9 viola chiaro
+ #a349a4
+ */
+
+.btn-front-page {
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #02ff396c; */
+}
+
+.style-food h1,
+.style-food h2,
+.style-food h3,
+.style-food h4,
+.style-food a {
+  color: #eeba00;
+}
+
+.style-error h1,
+.style-error h2,
+.style-error h3,
+.style-error h4,
+.style-error a {
+  color: #db5000;
+}
+
+html {
+  margin-top: 0px;
+}
+
+.style-attractions h1,
+.style-attractions h2,
+.style-attractions h3,
+.style-attractions h4,
+.style-attractions a {
+  color: #0091b5;
+}
+
+.style-culture h1,
+.style-culture h2,
+.style-culture h3,
+.style-culture h4,
+.style-culture a {
+  color: #a349a4;
+}
+
+.wp-block-columns {
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+
+html {
+  margin-top: 0px;
+}
+
+video {
+  object-fit: cover;
+  z-index: -1;
+}
+
+#site-logo {
+  position: absolute;
+  top: 20px; /* Puoi regolare la posizione verticale del logo */
+  left: 20px; /* Puoi regolare la posizione orizzontale del logo */
+  z-index: 9999; /* Imposta un indice di z-index alto per posizionare il logo sopra il video */
+}
+
+.container-fluid {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#countdown-timer {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 100vw;
+  padding: 5px;
+  margin-top: 210px;
+  margin-bottom: 20px;
+  background-color: rgba(1, 25, 59, 0.7);
+}
+
+#button {
+  margin-top: 250px; /* Aggiungi margine superiore per separare il pulsante dal countdown */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ff5900;
+  padding: 5px 20px;
+  box-shadow: 3px 3px 5px #002338;
+}
+
+#button:hover {
+  background-color: #eb4a00;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/*IMPOSTAZIONE HOME PAGE*/
+.banner {
+  flex-direction: column;
+}
+
+.banner img {
+  max-width: 30%;
+}
+
+.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 p input {
+  background: #eb5a49;
+  color: white;
+  border: none;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 10px;
+}
+
+.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 p input {
+  width: 430px;
+}
+
+textarea {
+  width: 430px;
+  height: 5rem;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: #002338;
+  border-radius: 10px;
+  margin: 0;
+  background-color: #002338;
+  color: #ff5900;
+  width: 430px;
+  text-align: center;
+}
+
+/*CLASSI DELLA NAVBAR RIGHT*/
+
+.navcontainer {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 40px 0 20px;
+  z-index: 2;
+}
+.header {
+  padding-block: 20px;
+}
+.header__logo {
+  float: left;
+  text-decoration: none;
+}
+.header__menu {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.header__menu .menu-item {
+  display: inline-block;
+}
+.header__menu .menu-item a {
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  padding: 3px;
+  margin: 0px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header__menu .menu-item a:hover {
+  color: #eb6010;
+  transition: 0.2s;
+  box-shadow: 0 10px 10px -7px rgba(238, 79, 0, 0.7);
+}
+
+/* _______________________________________________________________________________________________
+___________________ S F O N D O    S C R I T T A _________________________________________________ */
+
+.wp-block-cover {
+  padding: 0;
+}
+
+div.wp-block-cover-is-layout-flow > p {
+  background-color: rgba(1, 25, 59, 0.7);
+}
+.style-food div.wp-block-cover-is-layout-flow > p {
+  background-color: #eeba00b3;
+}
+
+.style-attractions div.wp-block-cover-is-layout-flow > p {
+  background-color: #0091b5a6;
+}
+
+.style-culture div.wp-block-cover-is-layout-flow > p {
+  background-color: #a349a48c;
+}
+.style-error div.wp-block-cover-is-layout-flow > p {
+  background-color: #db5000;
+}
+/*///////////////////////////////////////*/
+
+/*IMPORT*/
+/*
+FONT STYLE
+font-family: ‘Poppins’, sans-serif;
+
+PALETTE
+blu scuro:  #002338
+blu medio:  #2a4a8b
+blu chiaro:  #009dd2
+giallo chiaro: #f8d90f
+giallo medio:  #ffca03
+giallo scuro:  #eeba00
+arancio chiaro:   #db5000
+arancio scuro:    #a8a01
+*/
+body {
+  font-family: ‘Poppins’, sans-serif;
+}
+
+.header-custom {
+  font-family: ‘Poppins’, sans-serif;
+  width: 100%;
+  max-height: 720px;
+}
+
+.logo-custom {
+  width: 250px;
+  margin: 20px;
+}
+
+/*modifico l'aspetto degli oggetti dentro la navbar*/
+.nav-btn {
+  background: transparent;
+  border: none;
+  padding: 1em;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.user-btn {
+  background: transparent;
+  border: none;
+  padding: 1em;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.subnav-custom {
+  max-width: 400px;
+}
+
+.subnav-custom button a {
+  text-decoration: none;
+  color: white;
+}
+
+.subnav-custom button a:hover {
+  color: #eb6010;
+  transition: 0.2s;
+  box-shadow: 0 8px 10px -5px rgba(238, 79, 0, 0.7);
+}
+
+.fa-solid {
+  color: #f8d90f;
+}
+
+.fa-solid:hover {
+  color: #eb6010;
+}
+
+.condensed {
+  display: none;
+}
+
+/*divido la zona navbar*/
+.nav-custom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr), 30% 70%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  height: 100px;
+}
+
+.logo-custom {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: left;
+}
+
+.menu-extended {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-self: right;
+}
+
+/*cerco di adattare le immagini e il div*/
+.three-slides {
+  width: inherit;
+  position: absolute;
+  top: -200px;
+  width: 500px;
+  height: inherit;
+}
+
+.slides {
+  width: inherit;
+}
+
+/*la nav deve vedersi sopra all'immagine*/
+.nav-custom {
+  position: absolute;
+  z-index: 1;
+}
+
+.menu-condensed {
+  display: none;
+}
+
+/*ATTENZIONE*/
+
+/*addesso voglio creare lo slideshow*/
+.slides img {
+  width: 100%;
+}
+
+/* contenitore slides*/
+.three-slides {
+  width: 100%;
+  display: flex;
+}
+
+/*bottoncini ihih */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -17%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*posiziono il bottone > next a dx */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* stile > quando passo sopra ai bottoni */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*testi e bottoni > varie zona centrale*/
+.textcard-custom {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  padding: 8px 0px 8px 0px;
+  position: absolute;
+  top: 27vw;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  background-color: rgba(5, 37, 85, 0.7);
+}
+
+.textcard-custom p {
+  margin: 15px;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.textcard-custom button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 15px;
+  width: 150px;
+  height: 50px;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #ff5900;
+  padding: 5px;
+  box-shadow: 3px 3px 5px #002338;
+}
+
+.textcard-custom button:hover {
+  background-color: #eb4a00;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.slides img {
+  max-height: 720px;
+  object-fit: cover;
+}
+
+/*pallini inferiori indicatori*/
+.dots {
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/*animazione*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgba(5, 37, 85); /* Black fallback color */
+  background-color: rgba(2, 25, 60, 0.9); /* Black w/opacity */
+  overflow-y: hidden; /* Disable vertical scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay-content a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 2.2em;
+  color: #ffffff;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #ff5900;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 3em;
+  color: #eb4a00;
+}
+
+/*DIVIDE IN TRE COLONNE E DUE RIGHE IL FOOTER E POSIZIONO GLI ELEMENTI*/
+.footer-custom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+}
+
+.footer-div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.footer-div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.footer-div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.footer-div4 {
+  grid-area: 2 / 1 / 3 / 4;
+  justify-self: center;
+}
+
+/*FOOTER*/
+.footer-custom {
+  background-color: #002338;
+  padding: 40px 10% 30px 10%;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  height: 300px;
+}
+
+.h4-custom {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+.p-custom {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.fa-brands {
+  color: #eb6010;
+  font-size: xx-large;
+  margin: 3px;
+  margin-bottom: 10px;
+}
+
+.form-custom {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.email-custom {
+  height: 40px;
+}
+
+.btn-submit-custom {
+  border: none;
+  background-color: #eb6010;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.btn-submit-custom:hover {
+  background-color: #d54705;
+  cursor: pointer;
+}
+
+.footer-div1 a,
+.footer-div3 a {
+  display: block;
+  text-decoration: none;
+  color: #eb6010;
+  margin: 5px;
+  font-size: 0.8em;
+  text-transform: none;
+}
+
+.footer-div1 a:hover,
+.footer-div3 a:hover {
+  margin-left: 8px;
+}
+
+.footer-custom a:hover {
+  color: #eb5210;
+}
+
+.footer-div1,
+.footer-div2,
+.footer-div3,
+.footer-div4 {
+  border-left: solid 1px #eb6010;
+  padding-left: 12px;
+}
+
+.p-custom {
+  margin-top: 5px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-width: 650px) {
+  .footer-custom {
+    display: flex;
+    flex-direction: column;
+    height: 670px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-extended {
+    display: none;
+  }
+
+  .header-custom {
+    min-height: 400px;
+  }
+
+  .three-slides {
+    min-height: 400px;
+    object-fit: cover;
+  }
+
+  .slides {
+    min-height: 400px;
+    object-fit: cover;
+  }
+
+  .slides img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    width: auto;
+    margin-top: -2px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .textcard-custom {
+    position: absolute;
+    top: 160px;
+  }
+
+  .textcard-custom p {
+    font-size: 1rem;
+  }
+
+  .menu-condensed {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+  }
+
+  .logo-custom {
+    width: 200px;
+    margin: 15px;
+  }
+
+  .nav-custom {
+    height: 60px;
+  }
+
+  .condensed {
+    display: flex;
+  }
+
+  .extended {
+    display: none;
+  }
+
+  .chat-btn-big button {
+    width: 50px;
+  }
+
+  .chat-btn-big button i {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .icon-menu {
+    color: #f2f2f2;
+    font-size: 2em;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .overlay-content a {
+    padding: 8px;
+  }
+}
+
+/*esp. home page*/
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.banner img {
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+.banner h2 {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.banner .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}

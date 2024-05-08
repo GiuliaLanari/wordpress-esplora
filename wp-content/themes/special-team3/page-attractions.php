@@ -36,14 +36,14 @@ get_header();
     // print_r($my_posts)
     
     if( ! empty( $my_posts ) ){
-        $output = '<ul>';
-        // print_r($my_posts);
-        foreach ( $my_posts as $p ){
-            print_r($p);
-            // $output = '<li><a href="' . get_permalink( $p->ID ) . '">' 
-            // . $p->post_title . '</a></li>';
-        }
-        $output .= '<ul>';
+        $output = '<col>';
+        print_r($my_posts[1]);
+        // foreach ( $my_posts as $p ){
+        //     // print_r($p);
+        //     // $output = '<li><a href="' . get_permalink( $p->ID ) . '">' 
+        //     // . $p->post_title . '</a></li>';
+        // }
+        $output .= '<col>';
     }
     // ?>
 
