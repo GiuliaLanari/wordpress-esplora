@@ -30,6 +30,12 @@ get_header();
 </div>
     
 
+<div class="style-error">
+<?php
+    the_content();
+?>
+</div>
+    
 
 <?php
     include "footerStyle.php";

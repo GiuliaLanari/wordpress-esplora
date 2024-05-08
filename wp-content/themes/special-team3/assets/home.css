@@ -143,9 +143,9 @@ video {
   flex-direction: column;
 }
 
-/* .banner img {
+.banner img {
   max-width: 30%;
-} */
+}
 
 .wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 p input {
   background: #eb5a49;
