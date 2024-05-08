@@ -1,12 +1,28 @@
 <?php
 
-get_header(); 
+
+use function FakerPress\get;
+
+
+get_header();
 ?>
-
-<h1>sono single </h1>
-
+<div class="position-relative overflow-hidden ">
 
 
+    <?php
+    include "nav.php";
+    ?>
+  
+
+
+
+<div class="">
+<?php
+    the_content();
+?>
+</div>
+    
 
 <?php
-get_footer();
+    include "footerStyle.php";
+    get_footer();
