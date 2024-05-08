@@ -15,7 +15,7 @@ get_header();
 
 
 
-    <div class="container-fluid position-absolute  overflow-hidden p-0 ">
+    <div class="position-absolute  overflow-hidden p-0 ">
         <!-- Logo -->
         <?php
         // Verifica se la pagina ha un'immagine in evidenza
@@ -67,10 +67,15 @@ get_header();
                 
                 if ($matches) :
             ?>
+            <div class="cover-wrapper">
                 <img src="<?php echo $matches[1]; ?>" alt="<?php the_title(); ?>">
+            </div>
+                
             <?php endif; ?>
+        </a>
+        <a class="txt-wrap" href="<?php the_permalink(); ?>">
             <h2><?php the_title(); ?></h2>
-            <span class="button">Scopri di più</span>
+            <p>Scopri di più</p>
         </a>
     </div>
     <?php
