@@ -45,13 +45,13 @@ get_header();
     the_content();
     ?>
 
-<div class="banner my-5">
+<div class="banner">
     <?php
         $args = array(
-            'post_type' => 'page', // Recupera solo le pagine
-            'posts_per_page' => 3, // Numero massimo di pagine da recuperare
-            'orderby' => 'date', // Ordina per data di pubblicazione
-            'order' => 'DESC' // Ordine decrescente
+            'post_type' => 'page', 
+            'posts_per_page' => 3, 
+            'orderby' => 'date',
+            'order' => 'DESC' ,
         );
 
         $query = new WP_Query($args);
@@ -61,8 +61,15 @@ get_header();
     ?>
     <div class="banner-item">
         <a href="<?php the_permalink(); ?>">
-            <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('medium'); ?>
+            <?php
+                
+                $content = apply_filters('the_content', get_the_content());
+             
+                preg_match('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
+                
+                if ($matches) :
+            ?>
+                <img src="<?php echo $matches[1]; ?>" alt="<?php the_title(); ?>">
             <?php endif; ?>
             <h2><?php the_title(); ?></h2>
             <span class="button">Scopri di più</span>
@@ -71,7 +78,7 @@ get_header();
     <?php
             endwhile;
         endif;
-        wp_reset_postdata(); // Reimposta i dati del post
+        wp_reset_postdata(); 
     ?>
 </div>
 
