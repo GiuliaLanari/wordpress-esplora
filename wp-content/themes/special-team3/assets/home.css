@@ -121,6 +121,15 @@ video {
   cursor: pointer;
 }
 
+/*IMPOSTAZIONE HOME PAGE*/
+.banner {
+  flex-direction: column;
+}
+
+.banner img {
+  max-width: 30%;
+}
+
 /*CLASSI DELLA NAVBAR RIGHT*/
 
 .navcontainer {
