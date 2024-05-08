@@ -1,12 +1,36 @@
 <?php
 
-get_header(); 
+
+
+use function FakerPress\get;
+
+
+
+get_header();
 ?>
+<div class="position-relative overflow-hidden ">
 
-<h1>sono single </h1>
+
+<div style="background-color: #002338; height:5rem">
+<?php
+    include "nav.php";
+   
+    ?>
+</div>
 
 
+  
+
+
+
+
+<div class="style-articoli">
+<h1><?php the_title(); ?></h1>
+<?php the_content(); ?>
+</div>
+    
 
 
 <?php
-get_footer();
+    include "footerStyle.php";
+    get_footer();

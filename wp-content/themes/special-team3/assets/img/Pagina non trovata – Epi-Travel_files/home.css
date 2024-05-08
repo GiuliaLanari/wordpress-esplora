@@ -25,26 +25,11 @@ body {
   /* background-color: #02ff396c; */
 }
 
-.style-articoli {
-  margin: 2rem;
-  text-align: center;
-}
-
-.style-articoli h1,
-.style-articoli h2,
-.style-articoli h3,
-.style-articoli h4,
-.style-articoli h5,
-.style-articoli h6 {
-  color: #2a4a8b;
-}
-
 .style-food h1,
 .style-food h2,
 .style-food h3,
 .style-food h4,
-.style-food a,
-.site-food .card-content h2 a {
+.style-food a {
   color: #eeba00;
 }
 
@@ -64,8 +49,7 @@ html {
 .style-attractions h2,
 .style-attractions h3,
 .style-attractions h4,
-.style-attractions a,
-.site-attractions .card-content h2 a {
+.style-attractions a {
   color: #0091b5;
 }
 
@@ -73,8 +57,7 @@ html {
 .style-culture h2,
 .style-culture h3,
 .style-culture h4,
-.style-culture a,
-.site-culture .card-content h2 a {
+.style-culture a {
   color: #a349a4;
 }
 
@@ -143,9 +126,9 @@ video {
   flex-direction: column;
 }
 
-/* .banner img {
+.banner img {
   max-width: 30%;
-} */
+}
 
 .wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 p input {
   background: #eb5a49;
@@ -227,18 +210,15 @@ ___________________ S F O N D O    S C R I T T A _______________________________
 div.wp-block-cover-is-layout-flow > p {
   background-color: rgba(1, 25, 59, 0.7);
 }
-.style-food div.wp-block-cover-is-layout-flow > p,
-.banner-item:nth-child(3) {
+.style-food div.wp-block-cover-is-layout-flow > p {
   background-color: #eeba00b3;
 }
 
-.style-attractions div.wp-block-cover-is-layout-flow > p,
-.banner-item:nth-child(1) {
+.style-attractions div.wp-block-cover-is-layout-flow > p {
   background-color: #0091b5a6;
 }
 
-.style-culture div.wp-block-cover-is-layout-flow > p,
-.banner-item:nth-child(2) {
+.style-culture div.wp-block-cover-is-layout-flow > p {
   background-color: #a349a48c;
 }
 .style-error div.wp-block-cover-is-layout-flow > p {
@@ -769,84 +749,27 @@ body {
 }
 
 /*esp. home page*/
-
 .banner {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.banner-item {
-  margin-top: 40px;
-  background-color: #141c35d2;
-  display: flex;
-  /* justify-content: space-between; */
-  height: 13rem;
-  width: 85%;
-  /* overflow: hidden; */
-  transition: transform 0.3s ease-out;
+.banner img {
+  max-width: 100%;
+  margin-right: 20px;
 }
 
-.banner-item:hover {
-  transform: scale(1.01);
+.banner h2 {
+  font-size: 24px;
+  margin-right: 20px;
 }
 
-.banner-item a {
-  display: block; /* per adattarsi all'altezza dell'immagine */
-  color: white;
+.banner .button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
   text-decoration: none;
-  font-weight: bold; /*NON FUNZIONA???*/
-}
-
-.banner-item a h2 {
-  font-size: 80px;
-  padding: 1.5rem;
-}
-
-.banner-item a p {
-  background-color: white;
-  color: black;
-  padding-inline-end: 1.5rem;
-  padding-block: 0.3rem;
-}
-
-.banner-item .txt-wrap {
-  flex-grow: 1;
-  text-align: end;
-}
-
-.banner-item .cover-wrapper {
-  width: 100%;
-  height: 100%;
-}
-.cover-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.banner-item:nth-child(2) {
-  flex-direction: row-reverse;
-  align-self: flex-end;
-}
-
-.banner-item:nth-child(2) a p {
-  padding-inline-start: 1.5rem;
-}
-
-.banner-item:nth-child(2) .txt-wrap {
-  text-align: start;
-}
-
-.banner-item:nth-child(3) {
-  margin-bottom: 40px;
-}
-
-.wp-post-image {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
-.card-content h2 a {
-  text-decoration: none;
+  border-radius: 5px;
 }
